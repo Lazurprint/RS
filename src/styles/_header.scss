@@ -1,0 +1,141 @@
+.header {
+    background: rgba(255, 233, 251, 0.90);
+    box-shadow: 0px 4px 4px 0px #D6B1FF;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__btn {
+        @include btnReset;
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+        color: #EE85B2;
+        font-size: 16px;
+        line-height: 20px;
+        /* 125% */
+        padding: 0 20px;
+        transition: all .2s ease-in-out;
+
+        svg {
+            margin-right: 10px;
+            transition: all .2s ease-in-out;
+        }
+
+        &.active:hover {
+            background-color: #EE85B2;
+            color: #fff;
+        }
+
+        &.active:hover path {
+            stroke: #fff;
+            transition: all .2s ease-in-out;
+        }
+    }
+}
+
+.cart {
+    position: relative;
+
+    &__quantity {
+        margin-left: 5px;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+    }
+
+    &.active:hover .cart-content {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity .2s, visibility .2s;
+    }
+}
+
+.cart-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s, visibility .2s;
+    cursor: default;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    border-radius: 0px 0px 10px 10px;
+    background: #EE85B2;
+    box-shadow: 0px 4px 4px 0px #8C30F5;
+    padding: 20px;
+
+    &__list {
+        @include listReset;
+        min-width: 360px;
+        max-height: 290px;
+    }
+
+    &__product {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__fullprice {
+        color: #FFF;
+    }
+
+    &__img {
+        max-width: 65px;
+        max-height: 65px;
+        background-color: #fff;
+        padding: 5px;
+    }
+
+    &__btn {
+        @include btnReset;
+        border-radius: 72px;
+        background: #8C30F5;
+        box-shadow: 0px 4px 4px 0px #FFF;
+        color: #FFF;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        text-transform: uppercase;
+        padding: 8px 38px;
+    }
+}
+
+.cart-product {
+    &__text {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 10px;
+    }
+
+    &__delete {
+        @include btnReset;
+    }
+
+}
+
+.simplebar-track.simplebar-vertical {
+    top: 0;
+    width: 8px;
+    right: -18px;
+
+}

@@ -1,0 +1,45 @@
+.footer {
+    margin-top: -363px;
+    background: rgba(251, 218, 245, 0.80);
+    padding: 40px 0;
+
+    &__contacts {
+        @include listReset;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: #EE85B2;
+        font-size: 18px;
+        font-weight: 600;
+
+        svg {
+            margin-right: 10px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        padding: 40px 0 18px;
+    }
+
+    &__descr {
+        display: block;
+        color: #EE85B2;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        &_fw {
+            display: block;
+            margin-top: 10px;
+        }
+    }
+
+}

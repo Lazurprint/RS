@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer type="module" src="vendor.js"></script>
+    <script defer type="module" src="app.js"></script>
+</head>
+
+<body>
+    <header class="header" style="position: static;">
+        <div class="container">
+            <div class="header__container">
+                <a href="#" class="header__link header__logo">
+                    <img class="logo-svg" src="images/img/Logo.svg" alt="">
+                </a>
+                <a href="#catalog" class="header__btn header__catalog active">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 11C16.5 9.93913 16.9214 8.92172 17.6716 8.17157C18.4217 7.42143 19.4391 7 20.5 7H28.5C28.7652 7 29.0196 7.10536 29.2071 7.29289C29.3946 7.48043 29.5 7.73478 29.5 8V24C29.5 24.2652 29.3946 24.5196 29.2071 24.7071C29.0196 24.8946 28.7652 25 28.5 25H20.5C19.4391 25 18.4217 25.4214 17.6716 26.1716C16.9214 26.9217 16.5 27.9391 16.5 29"
+                            stroke="#EE85B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M3.5 24C3.5 24.2652 3.60536 24.5196 3.79289 24.7071C3.98043 24.8946 4.23478 25 4.5 25H12.5C13.5609 25 14.5783 25.4214 15.3284 26.1716C16.0786 26.9217 16.5 27.9391 16.5 29V11C16.5 9.93913 16.0786 8.92172 15.3284 8.17157C14.5783 7.42143 13.5609 7 12.5 7H4.5C4.23478 7 3.98043 7.10536 3.79289 7.29289C3.60536 7.48043 3.5 7.73478 3.5 8V24Z"
+                            stroke="#EE85B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Каталог
+                </a>
+                <div href="#" class="header__btn header__cart cart" tabindex="0">
+                    <div class="cart__text">
+                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.605 9H6.39506C6.14896 9 5.91151 9.09075 5.72814 9.25487C5.54476 9.419 5.42835 9.64498 5.40117 9.88957L3.6234 25.8896C3.60786 26.0293 3.62199 26.1708 3.66486 26.3048C3.70772 26.4387 3.77836 26.5621 3.87215 26.6669C3.96595 26.7717 4.08079 26.8555 4.20919 26.9129C4.33758 26.9703 4.47664 27 4.61728 27H28.3827C28.5234 27 28.6624 26.9703 28.7908 26.9129C28.9192 26.8555 29.0341 26.7717 29.1279 26.6669C29.2217 26.5621 29.2923 26.4387 29.3352 26.3048C29.378 26.1708 29.3922 26.0293 29.3766 25.8896L27.5989 9.88957C27.5717 9.64498 27.4553 9.419 27.2719 9.25487C27.0885 9.09075 26.8511 9 26.605 9Z"
+                                stroke="#EE85B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M11.5 9C11.5 7.67392 12.0268 6.40215 12.9645 5.46447C13.9021 4.52678 15.1739 4 16.5 4C17.8261 4 19.0979 4.52678 20.0355 5.46447C20.9732 6.40215 21.5 7.67392 21.5 9"
+                                stroke="#EE85B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        Корзина
+                        <span class="cart__quantity">(0)</span>
+                    </div>
+                    <div class="cart-content">
+                        <ul class="cart-content__list" data-simplebar>
+                            
+                        </ul>
+                        <div class="cart-content__bottom">
+                            <div class="cart-content__fullprice">
+                                <span>Итого:</span>
+                                <span class="fullprce"></span>
+                            </div>
+                            <button class="cart-content__btn">Заказать</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <section class="catalog" id="catalog" style="padding-bottom: 20px;">
+        <div class="container">
+            <nav class="catalog__nav">
+                <ul class="catalog__menu">
+                    <li class="catalog__item">Открытки</li>
+                    <li class="catalog__item">Магниты</li>
+                    <li class="catalog__item">Упаковка</li>
+                    <li class="catalog__item">Постеры</li>
+                    <li class="catalog__item">Календари</li>
+                    <li class="catalog__item">Домашний декор</li>
+                </ul>
+            </nav>
+            <div class="catalog__content">
+                <h2 class="catalog__title">Каталог готовой продукции</h2>
+                <ul class="catalog__list">
+                    <li class="catalog__card">
+                        <img src="images/img/notebooks.jpg" alt="Блокноты" class="catalog__img">
+                        <h3 class="catalog__cards-title">Блокноты</h3>
+                        <span class="catalog__descr">А6, А5, А4</span>
+                        <span class="catalog__price">100 &#8381</span>
+
+                        <!-- <div class="catalog__count">
+                            <span class="catalog__minus catalog__count-btn">-</span>
+                            <span class="catalog__sum">0</span>
+                            <span class="catalog__plus catalog__count-btn">+</span>
+                        </div> -->
+                        
+                        <button class="catalog__button">Добавить в корзину</button>
+                    </li>
+                    <li class="catalog__card">
+                        <img src="images/img/magnets.jpg" alt="Магниты" class="catalog__img">
+                        <h3 class="catalog__cards-title">Магниты</h3>
+                        <span class="catalog__descr">70х100, 100х70</span>
+                        <span class="catalog__price">250 &#8381</span>
+                        <button class="catalog__button">Добавить в корзину</button>
+                    </li>
+                    <li class="catalog__card">
+                        <img src="images/img/calendar.jpg" alt="Календари" class="catalog__img">
+                        <h3 class="catalog__cards-title">Календари</h3>
+                        <span class="catalog__descr">Настенные, настольные, карманные</span>
+                        <span class="catalog__price">3 000 &#8381</span>
+                        <button class="catalog__button">Добавить в корзину</button>
+                    </li>
+                    <li class="catalog__card">
+                        <img src="images/img/packaging.jpg" alt="Упаковка" class="catalog__img">
+                        <h3 class="catalog__cards-title">Упаковка</h3>
+                        <span class="catalog__descr">Упаковка из картона с вашим товаром</span>
+                        <span class="catalog__price">1 250 &#8381</span>
+                        <button class="catalog__button">Добавить в корзину</button>
+                    </li>
+                    <li class="catalog__card">
+                        <img src="images/img/home-decor.jpg" alt="Домашний декор" class="catalog__img">
+                        <h3 class="catalog__cards-title">Домашний декор</h3>
+                        <span class="catalog__descr">Кружки, тарелки, камни</span>
+                        <span class="catalog__price">50 &#8381</span>
+                        <button class="catalog__button">Добавить в корзину</button>
+                    </li>
+                    <li class="catalog__card">
+                        <img src="images/img/postcards.jpg" alt="Открытки" class="catalog__img">
+                        <h3 class="catalog__cards-title">Открытки</h3>
+                        <span class="catalog__descr">Открытки для наших дорогих и любимых</span>
+                        <span class="catalog__price">75 &#8381</span>
+                        <button class="catalog__button">Добавить в корзину</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog__bottom">
+                <button class="catalog__btn btn-catalog">
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M16.5 11C16.5 9.93913 16.9214 8.92172 17.6716 8.17157C18.4217 7.42143 19.4391 7 20.5 7H28.5C28.7652 7 29.0196 7.10536 29.2071 7.29289C29.3946 7.48043 29.5 7.73478 29.5 8V24C29.5 24.2652 29.3946 24.5196 29.2071 24.7071C29.0196 24.8946 28.7652 25 28.5 25H20.5C19.4391 25 18.4217 25.4214 17.6716 26.1716C16.9214 26.9217 16.5 27.9391 16.5 29"
+                            stroke="#EE85B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M3.5 24C3.5 24.2652 3.60536 24.5196 3.79289 24.7071C3.98043 24.8946 4.23478 25 4.5 25H12.5C13.5609 25 14.5783 25.4214 15.3284 26.1716C16.0786 26.9217 16.5 27.9391 16.5 29V11C16.5 9.93913 16.0786 8.92172 15.3284 8.17157C14.5783 7.42143 13.5609 7 12.5 7H4.5C4.23478 7 3.98043 7.10536 3.79289 7.29289C3.60536 7.48043 3.5 7.73478 3.5 8V24Z"
+                            stroke="#EE85B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    Каталог
+                </button>
+                <button class="catalog__btn btn-write-us">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28 7L16 18L4 7" stroke="#8C30F5" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M4 7H28V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V7Z"
+                            stroke="#8C30F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.8182 16L4.30835 24.7174" stroke="#8C30F5" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M27.6918 24.7174L18.1818 15.9999" stroke="#8C30F5" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    написать нам
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="catalog-modal">
+        <div class="catalog-modal__content">
+            <div class="catalog-modal__text">
+                <h3 class="catalog-modal__title">Оформить заказ</h3>
+                <button class="catalog-modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M25 7L7 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M25 25L7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                </button>
+            </div>
+            <form action="#" class="catalog-modal__form catalog-form">
+                <label for="" class="catalog-modal__label">
+                    <span>Имя</span>
+                    <input type="text" class="catalog-modal__input">
+                </label>
+                <label for="" class="catalog-modal__label">
+                    <span>Номер тел. или эл.почта</span>
+                    <input type="text" class="catalog-modal__input">
+                </label>
+                <label for="" class="catalog-modal__label">
+                    <span>Сообщение</span>
+                    <textarea class="catalog-modal__input" name="textarea" id="textarea" cols="21" rows="4"></textarea>
+                </label>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
